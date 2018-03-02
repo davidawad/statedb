@@ -1,6 +1,10 @@
 # statedb
 
-This is the very first database of JSON formatted U.S. State codes. 
+This is the very first database of JSON formatted U.S. State codes. Development of this database has been a slow process but that is changing quickly! 
+
+Feel free to reach out if you have any questions or have computing power you can share to make creating these files faster. 
+
+The data is sourced from the JUSTIA Law center, [you can find their website and learn more about that work here](http://justia.com).
 
 It's made entirely of JSON formatted files that can be accessed and used in any way that you want. Plaintext coming soon. 
 
