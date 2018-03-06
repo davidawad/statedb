@@ -1,15 +1,23 @@
 # statedb
 
-This is the very first database of JSON formatted U.S. State codes. Development of this database has been a slow process but that is changing quickly! 
+This is the very first database of JSON formatted U.S. State codes over multiple years. 
+
+[You can access the latest version of full dataset here](https://drive.google.com/drive/folders/1pwCK380GHW-0d6C5k-CF1YdGgYXu32Hj?usp=sharing).
+
+It's important to note that this database is not comprehensive! Each state has differently formatted laws and there is virtually no consistency in their structure. The way that these are being pieced together also means that it is likely that laws for specific counties could potentially be missing. 
+
 
 Feel free to reach out if you have any questions or have computing power you can share to make creating these files faster. 
 
-The data is sourced from the JUSTIA Law center, [you can find their website and learn more about that work here](http://justia.com).
+The data is sourced from the JUSTIA Law center, [you can find their website and learn more about that work here](http://justia.com). These laws are gathered to the best of their abilities. 
 
 It's made entirely of JSON formatted files that can be accessed and used in any way that you want. Plaintext coming soon. 
 
+See the partial alabama file for an example of the structure of these files:  
+
 ```sh
 $ cat alabama_2017_partial.json.1 | jq '.[16].chapters[4].articles[1].sections[1]'
+# note that these are zero indexed after the first level!  
 ```
 ```json
 {
