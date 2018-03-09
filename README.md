@@ -4,8 +4,7 @@ This is the very first database of JSON formatted U.S. State codes over multiple
 
 [You can access the latest version of full dataset here](https://drive.google.com/drive/folders/1pwCK380GHW-0d6C5k-CF1YdGgYXu32Hj?usp=sharing).
 
-It's important to note that this database is not comprehensive! Each state has differently formatted laws and there is virtually no consistency in their structure. The way that these are being pieced together also means that it is likely that laws for specific counties could potentially be missing. 
-
+**This database is not comprehensive!** Each state has differently formatted laws and there is virtually no consistency in their structure. The way that these are being pieced together also means that it is likely that any given laws could potentially be missing, although that is *unlikely* to be the case for most laws you would probably be using this for such as penal codes or property law. 
 
 Feel free to reach out if you have any questions or have computing power you can share to make creating these files faster. 
 
@@ -16,8 +15,8 @@ It's made entirely of JSON formatted files that can be accessed and used in any 
 See the partial alabama file for an example of the structure of these files:  
 
 ```sh
-$ cat alabama_2017_partial.json.1 | jq '.[16].chapters[4].articles[1].sections[1]'
-# note that these are zero indexed after the first level!  
+$ cat alabama_2017_partial.json | jq '.[16].chapters[4].articles[1].sections[1]'
+# note that laws are zero indexed after the first level! So article 2 is actually article[1]!
 ```
 ```json
 {
@@ -38,5 +37,18 @@ $ cat alabama_2017_partial.json.1 | jq '.[16].chapters[4].articles[1].sections[1
 }
 ```
 
+## Progress: 
 
-*Disclaimer:* These codes may not be the most recent version. Each individual state may have more current or accurate information. I make no warranties or guarantees about the accuracy, completeness, or adequacy of the information contained on this site or the information linked to on the state site. Please check official sources.
+Here is a chart depicting the progress of each specific state: 
+
+TODO
+
+## Important information
+
+It is important to be aware that these may be missing pieces of information, and in the worst case entire sections, for example it is likely not going to contain information for specific counties or any municipalities.
+
+*Disclaimer:* These codes may not be the most recent version. Each individual state may have more current or accurate information. I make no warranties or guarantees about the accuracy, completeness, or adequacy of the information contained on this site or the information on the state site. Please check official sources. 
+
+I am in no way associated with the Justia Law Center, this dataset is provided for educational and entertainment purposes only. I am not an attorney. 
+
+
