@@ -37,11 +37,28 @@ $ cat alabama_2017_partial.json | jq '.[16].chapters[4].articles[1].sections[1]'
 }
 ```
 
-## Progress: 
+## BEWARE
 
-Here is a chart depicting the progress of each specific state: 
+There is an annoying little problem with this dataset which is that **all the first indices are 0 indexed**.
 
-TODO
+Meaning that if the code of a given state is broken into chapters at the highest level, **chapter two would be at index one**.
+
+I will definitely be fixing this in a future revision of the scraper but for now this is how it works. 
+
+Here's an example: 
+
+```sh
+
+david@lithium ~/P/B/c/state_data>cat new-jersey_2015.json | jq '.[1].sections[90]'             14:40:33
+{
+  "section": "Section 2A:4A-44 - Incarceration - aggravating and mitigating factors.",
+  "link": "/codes/new-jersey/2015/title-2a/section-2a-4a-44/index.html",
+  "raws": [
+    "2A:4A-44 Incarceration - aggravating and mitigating factors.\n\n25.Incarceration--Aggravating and mitigating factors.\n\na. (1) Except as provided in subsections e. and f. of section 24 of P.L.1982, c.77 (C.2A:4A-43), in determining whether incarceration is an appropriate disposition, the court shall consider the following aggravating circumstances:
+
+. . .  # etc. 
+```
+
 
 ## Important information
 
