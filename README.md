@@ -66,6 +66,6 @@ It is important to be aware that these may be missing pieces of information, and
 
 *Disclaimer:* These codes may not be the most recent version. Each individual state may have more current or accurate information. I make no warranties or guarantees about the accuracy, completeness, or adequacy of the information contained on this site or the information on the state site. Please check official sources. 
 
-I am in no way associated with the Justia Law Center, this dataset is provided for educational and entertainment purposes only. I am not an attorney. 
+I am in no way associated with the Justia Law Center, this dataset is provided for educational and entertainment purposes only. Providing this data does not constitute the practice of law; no attorney-client relationship is formed. 
 
 
