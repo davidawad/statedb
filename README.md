@@ -2,7 +2,7 @@
 
 This is the very first database of JSON formatted U.S. State codes over multiple years. 
 
-[You can access the latest version of full dataset here](https://drive.google.com/drive/folders/1pwCK380GHW-0d6C5k-CF1YdGgYXu32Hj?usp=sharing).
+[You can access the latest version of full dataset here](https://bit.ly/2Wf4UNZ).
 
 **This database is not comprehensive!** Each state has differently formatted laws and there is virtually no consistency in their structure. The way that these are being pieced together also means that it is likely that any given laws could potentially be missing, although that is *unlikely* to be the case for most laws you would probably be using this for such as penal codes or property law. 
 
